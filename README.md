@@ -1,4 +1,12 @@
-# ssr-blog
+<!--
+ * @Description: 
+ * @Author: jinxiaojian
+ * @Email: jinxiaojian@youxin.com
+ * @Date: 2019-09-01 23:48:15
+ * @LastEditTime: 2019-09-02 00:00:35
+ * @LastEditors: 靳肖健
+ -->
+# 一个 nuxt 练习示例
 
 > Nuxt.js project
 
