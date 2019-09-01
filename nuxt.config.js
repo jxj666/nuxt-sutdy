@@ -3,7 +3,7 @@
  * @Author: jinxiaojian
  * @Email: jinxiaojian@youxin.com
  * @Date: 2019-09-01 23:48:15
- * @LastEditTime: 2019-09-01 23:55:55
+ * @LastEditTime: 2019-09-02 01:12:43
  * @LastEditors: 靳肖健
  */
 module.exports = {
@@ -46,6 +46,23 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
+    }
+  },
+  router: {
+    routes: [
+      // ...
+      {
+        name: 'post-id',
+        path: '/post/:id',
+        component: 'pages/post/_id/index.vue'
+      }
+    ]
+  },
+  generate: {
+    routes (callback) {
+      const posts = require('./posts.json')
+      let routes = posts.map(post => `/post/${post.id}`)
+      callback(null, routes)
     }
   }
 }
